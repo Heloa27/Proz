@@ -1,0 +1,21 @@
+def insertion_sort(vetor):
+    for i in range(1, len(vetor)):
+        chave = vetor[i]
+        j = i - 1
+        while j >= 0 and chave < vetor[j]:
+            vetor[j + 1] = vetor[j]
+            j -= 1
+        vetor[j + 1] = chave
+
+def tamanho_vetor(vetor):
+    return len(vetor)
+
+vetor = [15, 9, 21, 5, 33, 17, 11, 25, 7, 13, 29, 3, 19, 23, 1, 27]
+
+print("Vetor antes da ordenação:", vetor)
+
+insertion_sort(vetor)
+
+print("Vetor após a ordenação:", vetor)
+
+print("Tamanho do vetor:", tamanho_vetor(vetor))
