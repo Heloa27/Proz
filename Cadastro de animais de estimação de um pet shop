@@ -1,0 +1,19 @@
+class AnimalEstimacao:
+    def __init__(self):
+        self.nome = input("Digite o nome do animal: ")
+        self.raca = input("Digite a raça do animal: ")
+        self.idade = input("Digite a idade do animal: ")
+        self.responsavel = input("Digite o nome do responsável: ")
+        self.telefone = input("Digite o telefone do responsável: ")
+
+def cadastrar_animal():
+    return AnimalEstimacao()
+
+animal_cadastrado = cadastrar_animal()
+
+print("\nCadastro do Animal de Estimação:")
+print("Nome:", animal_cadastrado.nome)
+print("Raça:", animal_cadastrado.raca)
+print("Idade:", animal_cadastrado.idade)
+print("Responsável:", animal_cadastrado.responsavel)
+print("Telefone:", animal_cadastrado.telefone)
