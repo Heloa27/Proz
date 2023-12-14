@@ -1,0 +1,21 @@
+import React from 'react';
+import './App.css';
+
+function App() {
+  const meuNome = "Seu Nome"; // Substitua "Seu Nome" pelo seu nome real
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>
+          Bem-vindo ao meu aplicativo React!
+        </p>
+        <p>
+          Meu nome é {meuNome}.
+        </p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
