@@ -1,0 +1,15 @@
+// src/App.js
+import React from 'react';
+
+function App() {
+  const seuNome = "Heloa"; // Substitua com o seu nome
+
+  return (
+    <div>
+      <h1>Meu Aplicativo React</h1>
+      <p>Olá, {Heloa}!</p>
+    </div>
+  );
+}
+
+export default App;
